@@ -4,4 +4,4 @@ echo "---------------Switching to $1 ------------------------"
 cd $1
 
 terraform init
-terraform apply
+terraform $2
