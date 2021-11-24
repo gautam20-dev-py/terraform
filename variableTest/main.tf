@@ -6,8 +6,8 @@ variable "name"{
 
 variable "multiline"{
     type = string
-    default = "Ankit"
-    description = <<EOF
+    description = "multiline string"
+    default = <<EOF
     this is a test variable
     this is a test string
     EOF
