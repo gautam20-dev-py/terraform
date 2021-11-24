@@ -29,9 +29,9 @@ variable "mapexample"{
 }
 
 output "mapvaluename"{
-    value = ${var.mapexample["name"]}
+    value = "${var.mapexample["name"]}"
 }
 
 output "mapvalueami"{
-    value = ${var.mapexample["ami"]}
+    value = "${var.mapexample["ami"]}"
 }
