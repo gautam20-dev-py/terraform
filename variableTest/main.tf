@@ -3,3 +3,7 @@ variable "name"{
     default = "Ankit"
     description = "this is a test variable"
 }
+
+output "outputString" {
+    value = "${var.name}"
+}
