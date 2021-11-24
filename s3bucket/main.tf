@@ -4,7 +4,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "test_bucket"{
-  name = "terraform_test_buck_1234"
+  bucket = "terraform_test_buck_1234"
   acl = "private"
   tags = {
     name="terraform_test_buck_1234"
