@@ -10,9 +10,6 @@ resource "aws_instance" "test_instance" {
   associate_public_ip_address = "true"
   security_groups = ["${aws_security_group.testinstance_sg.name}"]
   key_name = "ec2KP"
-  tags {
-    Name = "testinstance"
-  }
 }
 
 resource "aws_security_group" "testinstance_sg" {
