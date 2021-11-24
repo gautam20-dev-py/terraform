@@ -20,3 +20,18 @@ output "outputString" {
 output "outputmultiline" {
     value = "${var.multiline}"
 }
+
+variable "mapexample"{
+    type = "map"
+    default = {"name"="ankit"
+               "ami"="ami1"
+    }
+}
+
+output "mapvaluename"{
+    value = ${var.mapexample["name"]}
+}
+
+output "mapvalueami"{
+    value = ${var.mapexample["ami"]}
+}
