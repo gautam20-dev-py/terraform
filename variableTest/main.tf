@@ -22,7 +22,7 @@ output "outputmultiline" {
 }
 
 variable "mapexample"{
-    type = "map"
+    type = map
     default = {"name"="ankit"
                "ami"="ami1"
     }
