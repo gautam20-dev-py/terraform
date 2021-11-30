@@ -8,7 +8,7 @@ if [[ $2 == "apply" ]]; then
 terraform apply --auto-approve
 elif [[ $2 == "destroy" ]]; then
 echo "Destroying infrastructure, this step is irreversible" 
-terraform destroy
+terraform destroy --auto-approve
 else
 terraform plan
 fi
