@@ -18,5 +18,5 @@ resource "aws_s3_bucket_object" "myfirst_object"{
   bucket = "${aws_s3_bucket.id}"
   key = "testfile.txt"
   source = "testfile.txt"
-  etag = "${md5(file("testfile.txt"))}"s
+  etag = "${md5(file("testfile.txt"))}"
 }
