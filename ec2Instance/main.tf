@@ -5,7 +5,7 @@ provider "aws" {
 
 variable "vpc_id"{
     type = string
-    default = "vpc-08a44663"
+    default = "vpc-094e3e333ecd8a755"
 }
 
 resource "aws_security_group" "terraform_allowssh" {
