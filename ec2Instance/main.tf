@@ -29,7 +29,7 @@ resource "aws_security_group" "terraform_allowssh" {
 resource "aws_instance" "test_instance" {
   ami = "ami-0108d6a82a783b352"
   instance_type = "t2.micro"
-  subnet_id = "subnet-54562f18"
+  subnet_id = "subnet-0094b57eb446c551a"
   associate_public_ip_address = "true"
   security_groups = ["${aws_security_group.terraform_allowssh.name}"]
   key_name = "ec2KP"
