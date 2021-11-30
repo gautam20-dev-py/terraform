@@ -31,6 +31,6 @@ resource "aws_instance" "test_instance" {
   instance_type = "t2.micro"
   subnet_id = "subnet-54562f18"
   associate_public_ip_address = "true"
-  security_groups = ["${aws_security_group.terraform_allowssh.name}"]
+  security_groups = ["${aws_security_group.terraform_allowssh.id}"]
   key_name = "ec2KP"
 }
