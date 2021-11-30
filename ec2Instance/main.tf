@@ -4,7 +4,7 @@ provider "aws" {
 }
 
 variable "vpc_id"{
-    type = "string"
+    type = string
     default = "vpc-08a44663"
 }
 
