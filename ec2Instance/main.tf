@@ -27,10 +27,16 @@ resource "aws_security_group" "terraform_allowssh" {
 }
 
 resource "aws_instance" "test_instance" {
+  name = "test_instance"
   ami = "ami-0108d6a82a783b352"
   instance_type = "t2.micro"
   subnet_id = "subnet-54562f18"
   associate_public_ip_address = "true"
   security_groups = ["${aws_security_group.terraform_allowssh.id}"]
   key_name = "ec2KP"
+  tags  {
+    name = "Terraform Instance"
+    created_by = "Terraform"
+  }
+  iam_instance_profile = "arn:aws:iam::116413399134:instance-profile/ec2-s3-role"
 }
