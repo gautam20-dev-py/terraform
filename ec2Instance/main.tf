@@ -37,5 +37,5 @@ resource "aws_instance" "test_instance" {
     name = "Terraform Instance"
     created_by = "Terraform"
   }
-  iam_instance_profile = "arn:aws:iam::116413399134:instance-profile/ec2-s3-role"
+  iam_instance_profile = "ec2s3role"
 }
