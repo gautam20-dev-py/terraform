@@ -34,7 +34,7 @@ resource "aws_instance" "test_instance" {
   associate_public_ip_address = "true"
   security_groups = ["${aws_security_group.terraform_allowssh.id}"]
   key_name = "ec2KP"
-  tags  {
+  tags  = {
     name = "Terraform Instance"
     created_by = "Terraform"
   }
