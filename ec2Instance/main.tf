@@ -27,7 +27,6 @@ resource "aws_security_group" "terraform_allowssh" {
 }
 
 resource "aws_instance" "test_instance" {
-  name = "test_instance"
   ami = "ami-0108d6a82a783b352"
   instance_type = "t2.micro"
   subnet_id = "subnet-54562f18"
